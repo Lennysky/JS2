@@ -1,0 +1,82 @@
+<input value="Elena" class='first-name-input default-input' id='first-name' />
+<input value="Ekhin" class='last-name' id='last-name' />
+<input value="Simferopol" class='address-input' id='address' />
+<select id="cities">
+    <option>Kiev</option>
+    <option selected='selected'>Minsk</option>
+    <option>Moscow</option>
+</select>
+<textarea id='hobbies'>Программирование, бэкэнд, телеграм-бот</textarea>
+<div id = 'avatar-wrapper'>
+    <img id='avatar' src="https://sun6-22.userapi.com/s/v1/ig2/zJnCk3Pgecw2Zq9EeJpuJAyHarH5ViNw9Oite-vuY_LUGyyqUfnNDhuosR3aM-eeX6PSIhuFV6dlgRaQAN3HFUyx.jpg?size=100x100&quality=95&crop=343,40,970,970&ava=1" alt="avatar">
+</div>
+
+<script>
+// определеяем переменные
+
+var firstNameId = 'first-name';
+// находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
+var firstNameEl = document.getElementById(firstNameId);
+var lastNameId = 'last-name';
+var lastNameEl = document.getElementById(lastNameId);
+var addressId = 'address';
+var addressEl = document.getElementById(addressId);
+var citiesId = 'cities';
+var citiesEl = document.getElementById(citiesId);
+var hobbiesId = 'hobbies';
+var hobbiesEl = document.getElementById(hobbiesId);
+var avatarWrapperId= 'avatar-wrapper';
+var avatarWrapperEl = document.getElementById(avatarWrapperId);
+var avatarId = 'avatar';
+var avatarEl = document.getElementById(avatarId);
+
+
+// алертим атрибут value у найденного элемента
+/* window.alert(firstNameEl.value);
+window.alert(lastNameEl.value);
+window.alert(addressEl.value); */
+//window.alert
+//window.alert(citiesEl.value);
+//window.alert(hobbiesEl.value);
+//window.alert(avatarWrapperEl.value);
+//window.alert(avatarWrapperEl.innerHTML);
+//window.alert(hobbiesEl.innerHTML);
+//window.alert(hobbiesEl.value);
+//window.alert(citiesEl.innerHTML);
+//window.alert(avatarEl.src);
+window.alert(avatarEl.alt);
+
+
+
+
+</script>
+
+<!--
+ 0. Представьте, что вы зашли на страницу редактирования профиля.
+Сейчас здесь только одно поле - Имя, заполненное вашим именем (измените его на свое)
+1. Алертните ниже class (по аналогии с value) для найденного firstNeameEl
+(атрибуту class у тега соответствует свойство className у его объекта/души, здесь типа несостыковка небольшая в наименованиях)
+2. Добавьте в разметку еще 2 инпута для lastName (фамилия) и адреса (address)
+3. Заполните value своими данными.
+4. Попросите window алертнуть эти value с помощью JS
+5. Добавьте в HTML тэг select, в качестве опций (option) которого сделайте список городов: Kiev, Minsk, Moscow.
+6. Для option со значением 'Minsk' добавьте атрибут selected ='selected' (Минск сразу будет выбран \ селектнут в этом списке)
+7. Найдите этот select с помощью JS и алертните его value
+(обратите внимание, что атрибута value у тэга select не существует, но у его "души",
+найденной через js, такое свойство есть).
+8. Сделайте вывод для себя, чему оно будет равно (значение value тэга selected равно выбранной (селектнутой) в данный момент опции)
+9. Добавьте на страницу textarea, заполните его внутренность (innerHTML) коротким предложением, перечислив свое хобби.
+10. Найдите с помощью JS этот textarea на странице и алертните его value с помощью объекта window
+(обратите внимание, что атрибута value у тэга textarea не существует, но у его "души",
+найденной через js, такое свойство есть).
+11. Делаем вывод, что в JS value у найденного объекта textarea равно его innerHTML (т.е. содержимому между открывающим и закрывающимся тегом)
+12. Добавьте на страницу div, внутри него картинку img, атрибут src которого равен ссылки на вашу аватарку из инета (например, ВК)
+13. Найдите этот div с помощью JS и алертните его значение value. Что видим? Делаем вывод: у "души" div-элемента нет свойства value
+(атрибута value н div'a тоже нет, т.к. div не является тэгом для ввода данных, это просто обертка-контейнер для других тегов).
+14. Запомните!!! value есть только у элементов, с помощью которых можно вводить данные (впечатывать, выбирать)
+с UI: input, select, textarea
+15. Алертните свойство (то, что пишется после точки) innerHTML у найденного дива (по аналогии с .value и .className)
+16. Алертните innerHTML найденного ранее textarea. Делаем вывод, что textarea.innerHTML == textarea.value
+17. Алертните innerHTML найденного ранее тега select (увидим его внутренности: список из option, увидим именно html-код)
+18. Найдите добавленную ранее img и алертните св-ва src и alt (добавьте атрибут alt для картинки)
+-->
