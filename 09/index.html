@@ -1,0 +1,72 @@
+<input value="Elena" title='Eneter your name' class='first-name-input default-input' id='first-name' />
+<input value="Ekhin" class='last-name default-input' id='last-name' />
+<input value="Simferopol" class='address-input default-input' id='address' />
+<select id="cities">
+    <option>Kiev</option>
+    <option selected='selected'>Minsk</option>
+    <option>Moscow</option>
+</select>
+<textarea id='hobbies'>Программирование, бэкэнд, телеграм-бот</textarea>
+<div id = 'avatar-wrapper'>
+    <img id='avatar' src="https://sun6-22.userapi.com/s/v1/ig2/zJnCk3Pgecw2Zq9EeJpuJAyHarH5ViNw9Oite-vuY_LUGyyqUfnNDhuosR3aM-eeX6PSIhuFV6dlgRaQAN3HFUyx.jpg?size=100x100&quality=95&crop=343,40,970,970&ava=1" alt="avatar">
+</div>
+
+<script>
+// определеяем переменные
+
+var firstNameId = 'first-name';
+// находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
+var firstNameEl = document.getElementById(firstNameId);
+var lastNameId = 'last-name';
+var lastNameEl = document.getElementById(lastNameId);
+var addressId = 'address';
+var addressEl = document.getElementById(addressId);
+var citiesId = 'cities';
+var citiesEl = document.getElementById(citiesId);
+var hobbiesId = 'hobbies';
+var hobbiesEl = document.getElementById(hobbiesId);
+var avatarWrapperId= 'avatar-wrapper';
+var avatarWrapperEl = document.getElementById(avatarWrapperId);
+var avatarId = 'avatar';
+var avatarEl = document.getElementById(avatarId);
+
+
+// если тому, что слева присваивается то, что справа от оператора присваивания =
+// то это значит, что firstEl.value приобретет новое значение 'Andrey'
+firstNameEl.value = 'Andrey';
+lastNameEl.value = 'Kamasutra';
+lastNameEl.title = 'Wrong last name';
+firstNameEl.setAttribute('value', 'Andrey');
+avatarEl.src = 'https://sun2.6789.userapi.com/s/v1/if1/ZlNegbJJmE_0n4QWcNUPMpKrPrA2Uhbjf2jJzBOasYVs4cbgHUyKzU1f45x2Bm53gzLY2pJ8.jpg?size=200x200&quality=96&crop=796,0,1709,1709&ava=1';
+
+avatarEl.title = 'I am avatar';
+citiesEl.value = 'Moscow';
+hobbiesEl.value = 'Hey, hello, I love you!';
+avatarWrapperEl.innerHTML = '<ul id="list"><li>1</li><li>2</li></ul>';
+
+//window.alert(lastNameEl.className);
+lastNameEl.className = 'address-input default-input error-input';
+
+
+//var listId = 'list';
+//var numberList = document.getElementById(listId);
+// заменяем одной строчкой:
+
+var numberList = document.getElementById('list');
+
+window.alert(numberList.innerHTML);
+
+</script>
+
+<style>
+    .default-input{
+        border: green 5px solid;
+        padding: 5px;
+    }
+
+    .error-input{
+        border-color: red;
+    }
+
+
+</style>
