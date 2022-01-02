@@ -1,19 +1,4 @@
-<input value="Elena" title='Eneter your name' class='first-name-input default-input' id='first-name' />
-<input value="Ekhin" class='last-name default-input' id='last-name' />
-<input value="Simferopol" class='address-input default-input' id='address' />
-<select id="cities">
-    <option>Kiev</option>
-    <option selected='selected'>Minsk</option>
-    <option>Moscow</option>
-</select>
-<textarea id='hobbies'>Программирование, бэкэнд, телеграм-бот</textarea>
-<div id = 'avatar-wrapper'>
-    <img id='avatar' src="https://sun6-22.userapi.com/s/v1/ig2/zJnCk3Pgecw2Zq9EeJpuJAyHarH5ViNw9Oite-vuY_LUGyyqUfnNDhuosR3aM-eeX6PSIhuFV6dlgRaQAN3HFUyx.jpg?size=100x100&quality=95&crop=343,40,970,970&ava=1" alt="avatar">
-</div>
-
-<script>
 // определеяем переменные
-
 var firstNameId = 'first-name';
 // находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
 var firstNameEl = document.getElementById(firstNameId);
@@ -55,18 +40,3 @@ lastNameEl.className = 'address-input default-input error-input';
 var numberList = document.getElementById('list');
 
 window.alert(numberList.innerHTML);
-
-</script>
-
-<style>
-    .default-input{
-        border: green 5px solid;
-        padding: 5px;
-    }
-
-    .error-input{
-        border-color: red;
-    }
-
-
-</style>
